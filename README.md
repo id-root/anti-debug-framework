@@ -187,7 +187,6 @@ anti_debug_framework/
 
 | Document | Description |
 |----------|-------------|
-| [WHITEPAPER](docs/WHITEPAPER.pdf) | Full research paper with theory & evaluation |
 | [threat_model](docs/threat_model.md) | Threat modeling & assumptions |
 | [hardware_debug_registers](docs/hardware_debug_registers.md) | DR0-DR7 technical deep dive |
 | [why_detection_fundamentally_fails](docs/why_detection_fundamentally_fails.md) | Theoretical limits |
