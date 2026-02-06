@@ -60,6 +60,7 @@ fn read_tracer_pid_from_proc() -> u32 {
 }
 
 /// Returns true if a tracer (debugger/strace/ltrace) is attached.
+#[allow(dead_code)]
 pub fn has_tracer() -> bool {
     get_tracer_pid() > 0
 }
@@ -73,6 +74,7 @@ pub fn enable_gdb_compat_mode() {
 }
 
 /// Check if GDB-compatible mode is enabled.
+#[allow(dead_code)]
 pub fn is_gdb_compat_mode() -> bool {
     GDB_COMPAT_MODE.load(Ordering::Relaxed)
 }
@@ -100,6 +102,7 @@ pub fn init() {
 /// Invalidate the cached tracer status.
 /// 
 /// Useful if you want to re-check after running PTRACE_TRACEME.
+#[allow(dead_code)]
 pub fn invalidate_tracer_cache() {
     TRACER_CHECKED.store(false, Ordering::Relaxed);
 }
